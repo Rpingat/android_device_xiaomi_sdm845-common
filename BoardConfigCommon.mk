@@ -42,6 +42,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CLANG_VERSION := 11
   TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 endif
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
